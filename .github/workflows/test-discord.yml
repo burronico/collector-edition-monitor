@@ -1,0 +1,19 @@
+
+name: Test Discord Connection
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send-test-message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send message to Discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          curl --fail-with-body -X POST \
+            -H "Content-Type: application/json" \
+            --data '{"content":"Hello! GitHub Actions is successfully connected to the Collector Edition Monitor. 🎮"}' \
+            "$DISCORD_WEBHOOK_URL"
