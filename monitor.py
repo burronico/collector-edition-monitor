@@ -1,3 +1,21 @@
+"""
+Collector Edition Monitor
+-------------------------
+Purpose:
+    Monitors the official PlayStation Blog RSS feed for
+    announcements mentioning special game editions.
+
+Notifications:
+    Sends matching new articles to a Discord webhook.
+
+Requirements:
+    Python 3
+    DISCORD_WEBHOOK_URL environment variable
+
+State:
+    Stores previously seen article IDs in seen_posts.json.
+"""
+
 
 import json
 import os
