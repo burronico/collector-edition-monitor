@@ -1,5 +1,5 @@
 
-name: brack Diagnostic
+name: brack diagnostic
 
 on:
   workflow_dispatch:
