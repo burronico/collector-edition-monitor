@@ -48,7 +48,7 @@ def main():
         }
     )
 
-    with urllib.request.urlopen(request, timeout=30) as response:
+    with urllib.request.urlopen(request, timeout=60) as response:
         page = response.read().decode("utf-8", errors="replace")
 
         print("HTTP status:", response.status)
