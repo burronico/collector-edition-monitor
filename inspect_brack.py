@@ -12,7 +12,7 @@ to the automated monitoring system.
 import urllib.request
 from html.parser import HTMLParser
 
-URL = "https://www.brack.ch/it-multimedia/gaming/games/games"
+URL = "https://www.brack.ch/
 
 
 class PageInspector(HTMLParser):
