@@ -1,5 +1,5 @@
 
-name: Brack Diagnostic
+name: brack Diagnostic
 
 on:
   workflow_dispatch:
@@ -12,5 +12,5 @@ jobs:
       - name: Get project files
         uses: actions/checkout@v5
 
-      - name: Run Brack diagnostic
+      - name: Run brack diagnostic
         run: python inspect_Brack.py
