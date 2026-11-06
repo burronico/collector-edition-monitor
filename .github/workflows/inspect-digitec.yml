@@ -1,0 +1,16 @@
+
+name: Digitec Diagnostic
+
+on:
+  workflow_dispatch:
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get project files
+        uses: actions/checkout@v5
+
+      - name: Run Digitec diagnostic
+        run: python inspect_digitec.py
