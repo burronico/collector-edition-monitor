@@ -4,7 +4,7 @@ name: Collector Edition Monitor
 on:
   workflow_dispatch:
   schedule:
-    - cron: "7,37 * * * *"
+    - cron: "8,48 * * * *"
 
 permissions:
   contents: write
